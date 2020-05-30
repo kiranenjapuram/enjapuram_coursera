@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
+ * @file <enjapuram_coursera> 
  * @brief <Add Brief Description Here >
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <kiran enjapuram>
+ * @date <May 2020 >
  *
  */
 #ifndef __STATS_H__
