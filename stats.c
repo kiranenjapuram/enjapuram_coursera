@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
+ * @file <enjapuram_coursera> 
  * @brief <Add Brief Description Here >
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Kiran Enjapuram>
+ * @date <May 2020 >
  *
  */
 
@@ -28,8 +28,8 @@
 #define SIZE (40)
 
 void main() {
-int max=0;
-int min =0;
+int max=0; //declaration of variable.
+int min =0;//declaration of variable.
   unsigned int test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                               114, 88,   45,  76, 123,  87,  25,  23,
                               200, 122, 150, 90,   92,  87, 177, 244,
@@ -38,31 +38,31 @@ int min =0;
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-int n=sizeof(test)/sizeof(test[0]);
-sort(test,n);
+int n=sizeof(test)/sizeof(test[0]); //getting value of n.
+sort(test,n); //sorting array by using sort function.
 n=(n+1)/2-1;
-max=test[39];
-min=test[0];
+max=test[39];//max value.
+min=test[0];//min value.
 printf(" max number in array is %d \n",max);
-//findMean(test[],n);
+
 printf("min number in array is %d \n",min);
 
 printf("mean= %d \n",findMean(test,n));
 
 printf("median=%d \n",test[n]);
 
-printf("printing an array \n");
+printf("printing an array \n");//print ing an array.
 for (n=0;n<40;++n)
 printf(" %d \n",test[n]);
 
-printf("printing an array in descending order \n");
+printf("printing an array in descending order \n");//arranging an array in descending order.
 for (n=39;n>0;--n)
 printf(" %d \n",test[n]);
 
 	
 }
 	
-int findMean(int test[], int n) 
+int findMean(int test[], int n) //mean function.
 {   int q=0;
 
     int sum = 0; 
@@ -72,7 +72,7 @@ int findMean(int test[], int n)
     q=(double)sum/(double)n;
 return q+64;
 }
-int findMedian(int test[], int n) 
+int findMedian(int test[], int n) //median function.
 {  
     // First we sort the array 
     sort(test, test+n); 
@@ -92,7 +92,7 @@ void swap(int *p,int *q) {
    *q=t;
 }
 
-void sort(int a[],int n) { 
+void sort(int a[],int n) {   //sort function for sorting array.
    int i,j,temp;
 
    for(i = 0;i < n-1;i++) {
